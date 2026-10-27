@@ -1,0 +1,77 @@
+/* V9.4: one Video level, one grouped production page. Existing Design untouched. */
+#panel-video .panel-intro-row{margin-top:2px}
+.production-entry .catalogue-subtitle{font-size:11px;letter-spacing:.02em}
+.production-opening .case-heading-row{align-items:end}
+.production-opening .case-heading-row h1{font-size:clamp(60px,7.4vw,108px);line-height:.98;letter-spacing:-.055em}
+.production-opening .case-subtitle{font-family:var(--serif);font-size:22px;margin-top:23px}
+.production-opening .case-introduction{max-width:410px}
+.production-nav{display:flex;flex-wrap:wrap;gap:22px 34px}
+.production-nav a{font-size:11px;letter-spacing:.03em;padding-block:10px}
+.production-chapter,#window-process{scroll-margin-top:105px}
+.production-page .v9-section-head h2{font-family:var(--serif);font-size:clamp(33px,4vw,50px);font-weight:400;line-height:1.12;letter-spacing:-.035em}
+.production-page .v9-section-head h2 em{font-style:italic}
+.production-page .window-original-description{font-size:13px;line-height:1.95;max-width:470px;color:#59654f}
+.production-page .window-chapter>.case-section{padding-top:10px}
+.production-page .window-chapter .case-tone{padding-top:42px;padding-bottom:44px}
+.production-page #window-process h2{font-family:var(--sans);font-size:clamp(25px,2.4vw,34px);line-height:1.5;letter-spacing:-.04em}
+.production-page #window-process h2 em{font-style:normal}
+.production-page .frame-grid{gap:20px}
+.production-page .production-techniques{padding-top:55px;padding-bottom:0}
+.production-page .tech-case h2,.production-page .tech-case-heading h2{font-family:var(--serif);font-size:clamp(30px,3.2vw,43px);font-weight:400;line-height:1.12;letter-spacing:-.035em;margin:0}
+.production-page .tech-case{padding-top:34px;padding-bottom:48px}
+.production-page .tech-case-heading{grid-template-columns:1fr 1fr;gap:7%;align-items:start}
+.production-page .tech-figure .tech-still,.production-page .tech-figure .tech-player{height:clamp(260px,27vw,350px)}
+.production-page .motion-chapter{padding-top:36px;padding-bottom:58px;border-top:1px solid var(--line)}
+.production-page .motion-body{max-width:900px;margin:24px auto 0}
+.production-page .motion-body .v9-player{aspect-ratio:16/9}
+.production-page .motion-body video{object-fit:contain}
+.production-page .shortform-chapter{padding-top:36px;padding-bottom:60px;border-top:1px solid var(--line)}
+.shortform-layout{display:grid;grid-template-columns:minmax(240px,.58fr) minmax(0,1fr);gap:9%;align-items:start;margin-top:34px}
+.shortform-film{max-width:310px;width:100%;justify-self:center}
+.shortform-process{min-width:0}
+.shortform-process>h3{font-size:24px;font-weight:400;line-height:1.6;letter-spacing:-.04em;margin:0 0 15px}
+.shortform-process>p{font-size:13px;line-height:1.95;color:#59654f;margin:0}
+.shortform-process .fact-grid{margin-top:24px;gap:20px;padding-top:20px;grid-template-columns:1fr}
+.shortform-process .fact-grid>div{display:grid;grid-template-columns:95px 1fr;gap:15px}
+.shortform-process .fact-grid dd{margin:0;font-size:12px}
+.shortform-process .commercial-sequence{gap:15px;margin-top:28px}
+.shortform-process .commercial-sequence .evidence-open{aspect-ratio:9/16}
+.shortform-process .commercial-sequence figcaption{font-size:10px;line-height:1.8}
+.production-page .player-start>span:last-child{font-size:10px}
+.production-page .player-start{bottom:44px}
+@media(max-width:780px){
+ .production-opening .case-heading-row h1{font-size:clamp(58px,12vw,80px)}
+ .production-opening .case-introduction{max-width:none}
+ .production-opening .case-subtitle{font-size:20px}
+ .production-nav{gap:4px 25px}
+ .production-nav a{font-size:10px;min-height:42px;display:flex;align-items:center}
+ .production-page .tech-case-heading{grid-template-columns:1fr;gap:17px}
+ .production-page .window-original-description{font-size:12px;max-width:none}
+ .production-page .production-techniques{padding-top:35px}
+ .production-page .tech-case{padding-top:27px;padding-bottom:36px}
+ .production-page .tech-case-heading h2{font-size:33px}
+ .shortform-layout{gap:35px;grid-template-columns:minmax(210px,.7fr) 1fr}
+ .shortform-process .fact-grid>div{display:block}
+ .shortform-process .fact-grid dd{margin-top:7px}
+ .shortform-process>h3{font-size:22px}
+ .shortform-process>p{font-size:12px}
+ .shortform-process .commercial-sequence{gap:10px}
+}
+@media(max-width:540px){
+ .production-opening .case-heading-row h1{font-size:58px}
+ .production-nav{gap:2px 22px}
+ .production-page .window-chapter .case-tone{padding-block:32px}
+ .production-page .v9-section-head h2{font-size:35px}
+ .production-page #window-process h2{font-size:25px}
+ .production-page .tech-figure .tech-still{height:auto;aspect-ratio:3/4}
+ .production-page .tech-film{max-width:260px}
+ .production-page .tech-figure .tech-player{height:345px}
+ .production-page .motion-chapter{padding-top:30px;padding-bottom:38px}
+ .shortform-layout{grid-template-columns:1fr;gap:30px;margin-top:25px}
+ .shortform-film{max-width:280px}
+ .shortform-process .fact-grid>div{display:grid;grid-template-columns:85px 1fr;gap:13px}
+ .shortform-process .fact-grid dd{margin-top:0}
+ .shortform-process>p{font-size:13px}
+ .shortform-process .commercial-sequence{gap:14px}
+ .production-page .shortform-chapter{padding-top:28px;padding-bottom:30px}
+}

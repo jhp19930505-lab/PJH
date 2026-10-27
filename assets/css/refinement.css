@@ -1,0 +1,82 @@
+/* V9.3 — original editorial type; fewer top-level entries.
+   Scoped changes. All artwork and original media remain untouched. */
+.v93 .major-tabs{gap:38px}
+.v93 .major-tabs>button{padding:12px 0 25px;gap:0;flex-wrap:nowrap}
+.v93 .major-title{font-family:var(--serif);font-size:clamp(38px,4.2vw,61px);line-height:1.08;font-weight:400;letter-spacing:-.045em}
+.v93 .major-tabs>button:after{height:1px}
+.v93 .subfilters{gap:28px}
+.v93 .subfilter{font-family:var(--sans);font-size:12px;letter-spacing:.015em;gap:0}
+.v93 .catalogue-header{margin-bottom:17px}
+.v93 .desktop-nav a{letter-spacing:.13em}
+.v93 .catalogue-badge{font-size:8px;letter-spacing:.075em;font-weight:400;padding:6px 9px}
+.v93 .catalogue-meta>p{color:#72786b}
+.v93 .catalogue-meta{border-bottom-color:#e0e2d9}
+.v93 .mobile-navigation a>span{font-family:var(--sans)}
+/* Window remains the lead. These are small techniques, not project heroes. */
+.window-suite .visual-techniques{padding-top:62px;padding-bottom:38px}
+.techniques-intro{display:grid;grid-template-columns:1.1fr 1fr;gap:7%;align-items:end;margin-bottom:34px}
+.techniques-intro .overline{font-size:9px;margin:0 0 17px}
+.techniques-intro h2{font-family:var(--serif);font-size:clamp(28px,3vw,42px);font-weight:400;line-height:1.14;letter-spacing:-.035em;margin:0;max-width:490px;text-wrap:balance}
+.techniques-intro>p{font-size:12px;line-height:1.9;color:#68705e;margin:0;max-width:390px}
+.tech-case{border-top:1px solid var(--line);padding:32px 0 38px;scroll-margin-top:105px}
+.tech-case+.tech-case{padding-top:32px}
+.tech-case-heading{display:grid;grid-template-columns:1.1fr 1fr;gap:7%;align-items:start;margin-bottom:23px}
+.tech-eyebrow{font-size:9px;line-height:1.8;letter-spacing:.1em;color:#748068;margin:0 0 12px}
+.tech-case h3{font-family:var(--serif);font-size:clamp(27px,2.7vw,36px);font-weight:400;line-height:1.16;letter-spacing:-.03em;margin:0}
+.tech-copy>p{font-size:13px;line-height:1.95;color:#59654f;margin:0;word-break:keep-all}
+.tech-copy .tech-method{font-size:11px;line-height:1.8;color:#7a8173;margin-top:13px}
+.tech-method>span{display:inline-block;margin-right:12px;font-size:9px;letter-spacing:.075em;color:#56614c}
+.tech-media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px;align-items:start}
+.tech-figure{margin:0;min-width:0}
+.tech-figure .tech-still,.tech-figure .tech-player{height:clamp(260px,27vw,360px);width:100%;aspect-ratio:auto}
+.tech-figure .tech-still{background:#eeefe9}
+.tech-case#product-styling .tech-figure:first-child .tech-still{background:#fff}
+.tech-still img,.tech-player video{object-fit:contain;object-position:center;width:100%;height:100%;display:block}
+.tech-still>span{font-size:14px;padding:7px;right:9px;bottom:9px}
+.tech-player{background:#161c16}
+.tech-player .play-round{width:46px;height:46px;font-size:14px}
+.tech-player .player-start{inset:0 0 45px}
+.tech-player .player-start>span:last-child{font-size:9px}
+.tech-figure figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:11px;font-size:10px;line-height:1.8;color:#6d765f}
+.tech-figure figcaption a{white-space:nowrap;border-bottom:1px solid #b3baaa;font-size:9px;letter-spacing:.03em}
+.tech-credit{margin:17px 0 0;font-size:10px;line-height:1.8;color:#838a79}
+@media(min-width:1600px){.tech-media-grid{gap:28px}.tech-figure .tech-still,.tech-figure .tech-player{height:390px}}
+@media(max-width:1000px){.techniques-intro{gap:5%}.tech-case-heading{gap:5%}.tech-media-grid{gap:18px}.tech-copy>p{font-size:12px}.tech-figure .tech-still,.tech-figure .tech-player{height:290px}}
+@media(max-width:780px){
+ .v93 .major-tabs{gap:26px}
+ .v93 .major-title{font-size:44px}
+ .v93 .major-tabs>button{padding:12px 0 20px}
+ .v93 .subfilters{gap:24px;row-gap:0}
+ .v93 .subfilter{font-size:11px}
+ .window-suite .visual-techniques{padding-top:44px;padding-bottom:20px}
+ .techniques-intro,.tech-case-heading{grid-template-columns:1fr;gap:18px}
+ .techniques-intro{margin-bottom:26px}
+ .techniques-intro h2{font-size:34px;max-width:430px}
+ .techniques-intro>p{font-size:12px;max-width:none}
+ .tech-case h3{font-size:29px}
+ .tech-eyebrow{font-size:8px;margin-bottom:9px}
+ .tech-copy>p{font-size:12px}
+ .tech-copy .tech-method{font-size:10px;margin-top:9px}
+ .tech-media-grid{gap:15px}
+ .tech-figure .tech-still,.tech-figure .tech-player{height:255px}
+ .tech-case{padding-top:25px;padding-bottom:29px}
+ .tech-figure figcaption{font-size:9px}
+ .tech-credit{font-size:9px}
+}
+@media(max-width:540px){
+ .v93 .major-title{font-size:40px}
+ .v93 .major-tabs{gap:22px}
+ .v93 .subfilters{gap:21px}
+ .v93 .subfilter{font-size:10px;letter-spacing:.005em;min-height:42px}
+ .v93 .catalogue-badge{font-size:8px}
+ .techniques-intro h2{font-size:31px}
+ .techniques-intro>p .desktop-break{display:none}
+ .tech-case-heading{gap:15px;margin-bottom:20px}
+ .tech-media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 13px}
+ .tech-figure .tech-still{height:auto;aspect-ratio:3/4}
+ .tech-film{grid-column:1/-1;max-width:260px;justify-self:center;width:100%}
+ .tech-figure .tech-player{height:345px}
+ .tech-case h3{font-size:28px}
+ .tech-case .tech-credit{margin-top:17px}
+}
+@media(prefers-reduced-motion:reduce){.v93 .major-tabs>button:after{transition:none}}
